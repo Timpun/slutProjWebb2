@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    font-size: 3em;
+    color: white;
+    background-color: #002B5B;
+    height: 2em;
+}
+
+header,p {
+    margin: 0;
+}
