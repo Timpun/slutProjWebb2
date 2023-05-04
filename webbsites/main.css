@@ -27,11 +27,20 @@ nav a {
 }
 
 #container {
-padding: 2em;
+    display: flex;
 }
 
 #big {
     background-color: #F9F5EB;
     padding: 1em;
-    margin-bottom: 2em;
+    margin: 1em;
+    width: 50%;
+}
+
+footer {
+    background-color: #002B5B;
+    height: 155px;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
