@@ -29,10 +29,15 @@ nav a {
     margin-right: 2em;
 }
 
-#container {
+#container_big {
     display: flex;
     padding: 1em;
     align-items: center;
+}
+
+#container_small {
+    display: flex;
+    padding: 1em 1em 0 1em;
 }
 
 #big {
@@ -40,6 +45,15 @@ nav a {
     padding: 1em;
     margin: 0.5em;
     width: 50%;
+    height: 57.2vh;
+}
+
+#small {
+    background-color: #F9F5EB;
+    padding: 1em;
+    margin: 0.5em;
+    width: 25%;
+    aspect-ratio: 1 / 1;
 }
 
 footer {
@@ -74,5 +88,8 @@ footer p {
     }
     #big {
         width: 100%;
+    }
+    #small {
+        width: 50%;
     }
 }
