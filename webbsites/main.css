@@ -30,14 +30,15 @@ nav a {
 }
 
 #container_big {
-    display: flex;
     padding: 1em;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 #container_small {
-    display: flex;
     padding: 1em 1em 0 1em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 #big {
@@ -45,14 +46,13 @@ nav a {
     padding: 1em;
     margin: 0.5em;
     width: 50%;
-    height: 57.2vh;
+    aspect-ratio: 1.5 / 1;
 }
 
 #small {
     background-color: #F9F5EB;
     padding: 1em;
-    margin: 0.5em;
-    width: 25%;
+    margin: 1em;
     aspect-ratio: 1 / 1;
 }
 
@@ -71,6 +71,11 @@ footer p {
     color: white;
 }
 
+img {
+    width: 100;
+    aspect-ratio: 1.6 / 1;
+}
+
 @media screen and (max-width: 540px) {
     nav {
         display: flex;
@@ -83,17 +88,14 @@ footer p {
         margin-right: 0;
         font-size: 0.75em;
     }
-    #container {
+    #container_big {
         flex-direction: column;
     }
     #container_small {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: auto auto;
     }
     #big {
         width: 100%;
-    }
-    #small {
-        width: 50%;
+        aspect-ratio: 1/1;
     }
 }
