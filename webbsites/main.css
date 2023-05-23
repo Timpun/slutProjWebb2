@@ -10,7 +10,7 @@ body {
 header {
     font-size: 3em;
     background-color: #e3dbce;
-    padding: 0.75em;
+    padding: 20px;
 }
 
 header p {
@@ -36,7 +36,7 @@ nav a {
 }
 
 #container_small {
-    padding: 1em 1em 0 1em;
+    padding: 0.5em 0.5em 0 0.5em;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -46,13 +46,14 @@ nav a {
     padding: 1em;
     margin: 0.5em;
     width: 50%;
-    aspect-ratio: 1.5 / 1;
+    border: solid 1px #acaba9;
+    aspect-ratio: 1.5/1;
 }
 
 #small {
     background-color: #F9F5EB;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
     aspect-ratio: 1 / 1;
 }
 
@@ -76,7 +77,10 @@ img {
     aspect-ratio: 1.6 / 1;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1024px) {
+    header {
+        font-size: 2em;
+    }
     nav {
         display: flex;
         flex-direction: column;
@@ -90,12 +94,25 @@ img {
     }
     #container_big {
         flex-direction: column;
+        padding: 0.2em;
     }
     #container_small {
         grid-template-columns: auto auto;
+        padding: 0.2em;
+    }
+    #small {
+        margin: 0.2em;
+        padding: 0.2em;
     }
     #big {
         width: 100%;
-        aspect-ratio: 1/1;
+        margin: 0.2em;
+        padding: 0.2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container_small {
+        grid-template-columns: auto;
     }
 }
